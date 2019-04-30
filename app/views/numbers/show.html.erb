@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Phonenumber:</strong>
+  <%= @number.phonenumber %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @number.country %>
+</p>
+
+<p>
+  <strong>Messages</strong>
+  <% @messages.each do |message| %>
+	  <h3> expediteur : <%= message.from %> </h3>
+	  <strong>Date de reception : <%= message.created_at %> </strong>
+	  <p><%= message.text %> </p>
+<% end %>
+</p>
+
+<%= link_to 'Edit', edit_number_path(@number) %> |
+<%= link_to 'Back', numbers_path %>
