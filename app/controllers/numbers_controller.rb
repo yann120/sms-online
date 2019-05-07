@@ -3,6 +3,13 @@ class NumbersController < ApplicationController
 
   # GET /numbers
   # GET /numbers.json
+
+  private def get_country_image_url(number)
+    if number.country == "France"
+      return "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1280px-Flag_of_France.svg.png"
+    end
+  end
+
   def index
     @numbers = Number.all
   end
@@ -10,7 +17,8 @@ class NumbersController < ApplicationController
   # GET /numbers/1
   # GET /numbers/1.json
   def show
-	  @messages = Message.where to: @number.phonenumber
+    @messages = Message.where(to: @number.phonenumber).limit(50).order(created_at: :desc)
+    @image_url = get_country_image_url(@number)
   end
 
   # GET /numbers/new

@@ -1,23 +1,31 @@
 <p id="notice"><%= notice %></p>
+<div class="container is-fluid">
+  <%= image_tag @image_url, size: "100", class: "center", id: "flag" if @image_url %>
+    <p class="title has-text-centered">Number: +<%= @number.phonenumber %></p>
+  <div class="columns is-centered">
+    <div class="column is-two-thirds-desktop is-full-mobile is-four-fifths-tablet margin-10">
+      <% @messages.each do |message| %>
+      <div class="card has-background-primary">
+        <header class="card-header">
+          <p class="card-header-title is-centered">
+          <% from = message.from.chomp%>
+            +<%= message.from %>
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <%= message.text %>
+          </div>
+        </div>
+        <footer class="card-footer">
+          <p class="card-footer-item"><%= time_ago_in_words(message.created_at) %></p>
+        </footer>
+      </div>
+      <br>
+      <% end %>
+    </div>
+  </div>
 
-<p>
-  <strong>Phonenumber:</strong>
-  <%= @number.phonenumber %>
-</p>
-
-<p>
-  <strong>Country:</strong>
-  <%= @number.country %>
-</p>
-
-<p>
-  <strong>Messages</strong>
-  <% @messages.each do |message| %>
-	  <h3> expediteur : <%= message.from %> </h3>
-	  <strong>Date de reception : <%= message.created_at %> </strong>
-	  <p><%= message.text %> </p>
-<% end %>
-</p>
-
-<%= link_to 'Edit', edit_number_path(@number) %> |
-<%= link_to 'Back', numbers_path %>
+  <%# <%= link_to 'Edit', edit_number_path(@number) %>
+  <%# <%= link_to 'Back', numbers_path %>
+</div>
