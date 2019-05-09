@@ -14,3 +14,21 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require ./js/jquery-min
+//= require tether
+
+//= require ./js/classie
+//= require ./js/mixitup.min
+//= require ./js/nivo-lightbox
+//= require owl.carousel
+//= require ./js/jquery.stellar.min
+//= require ./js/jquery.nav
+//= require ./js/smooth-scroll
+//= require ./js/smooth-on-scroll
+//= require ./js/wow
+//= require ./js/menu
+//= require ./js/jquery.counterup.min
+//= require ./js/jquery.magnific-popup.min
+//= require ./js/waypoints.min
+
+//= require main

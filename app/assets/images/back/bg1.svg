@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1597" height="656" viewBox="0 0 1597 656" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="c" x1="0%" y1="0%" y2="100%">
+      <stop stop-color="#3369E7" offset="0%"/>
+      <stop stop-color="#843CF6" offset="100%"/>
+    </linearGradient>
+    <path id="a" d="M0,1.074008e-12 L1600,6.82121026e-13 L1600,640 L2.27373675e-13,640 L0,1.074008e-12 Z"/>
+    <filter id="b" width="104.2%" height="110.6%" x="-1.6%" y="-4.7%" filterUnits="objectBoundingBox">
+      <feOffset dx="8" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0.537254902 0 0 0 0 0.584313725 0 0 0 0 0.780392157 0 0 0 0.4 0" in="shadowBlurOuter1"/>
+    </filter>
+    <linearGradient id="d" x1="14.764%" x2="94.5%" y1="50%" y2="50%">
+      <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"/>
+      <stop stop-color="#FFFFFF" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 16)">
+    <mask id="e" fill="white">
+      <use xlink:href="#a"/>
+    </mask>
+    <g transform="matrix(-1 0 0 1 1600 0)">
+      <use fill="black" filter="url(#b)" xlink:href="#a"/>
+      <use fill="url(#c)" xlink:href="#a"/>
+    </g>
+    <path fill="url(#d)" d="M0,440 L1528.99857,440 C1551.09075,440 1569,457.903753 1569,480 L1569,480 C1569,502.09139 1551.09212,520 1528.99857,520 L0,520 L0,440 Z" style="mix-blend-mode:overlay" opacity=".2" mask="url(#e)"/>
+    <path fill="url(#d)" d="M-.13686838e-13 400L1123.00903 400C1145.09543 400 1163 417.903753 1163 440L1163 440C1163 462.09139 1145.08162 480 1123.00903 480L-.13686838e-13 480-.13686838e-13 400zM0 320L1626.00195 320C1648.09226 320 1666 337.903753 1666 360L1666 360C1666 382.09139 1648.08612 400 1626.00195 400L0 400 0 320zM.13686838e-13 480L1370.99763 480C1393.09033 480 1411 497.903753 1411 520L1411 520C1411 542.09139 1393.09562 560 1370.99763 560L.13686838e-13 560 .13686838e-13 480z" style="mix-blend-mode:overlay" opacity=".2" mask="url(#e)"/>
+    <path fill="url(#d)" d="M-385 520L575.007377 520C597.094693 520 615 537.903753 615 560L615 560C615 582.09139 597.085097 600 575.007377 600L-385 600-385 520zM0 600L1683.04523 600C1707.86781 600 1727.99048 620.12153 1727.99048 644.954887L1727.99048 644.954887C1727.99048 669.782786 1707.85489 689.909774 1683.04523 689.909774L0 689.909774 0 600z" style="mix-blend-mode:overlay" opacity=".2" mask="url(#e)"/>
+    <path fill="url(#d)" d="M-5.68434189e-14,520 L960.007377,520 C982.094693,520 1000,537.903753 1000,560 L1000,560 C1000,582.09139 982.085097,600 960.007377,600 L-5.68434189e-14,600 L-5.68434189e-14,520 Z" style="mix-blend-mode:overlay" opacity=".2" mask="url(#e)"/>
+  </g>
+</svg>
