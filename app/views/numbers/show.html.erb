@@ -3,7 +3,7 @@
   <%= image_tag @image_url, size: "100", class: "center", id: "flag" if @image_url %>
     <p class="title has-text-centered">Number: +<%= @number.phonenumber %></p>
   <div class="columns is-centered">
-    <div class="column is-two-thirds-desktop is-full-mobile is-four-fifths-tablet margin-10">
+    <div class="column is-two-thirds-desktop is-full-mobile is-four-fifths-tablet">
       <% @messages.each do |message| %>
       <div class="card has-background-primary">
         <header class="card-header">
